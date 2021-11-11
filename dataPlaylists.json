@@ -1,0 +1,378 @@
+{
+  "href": "https://api.spotify.com/v1/users/carlottosson/playlists?offset=0&limit=50",
+  "items": [
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3jaViGCQQUcx8w7mZIITS4"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3jaViGCQQUcx8w7mZIITS4",
+      "id": "3jaViGCQQUcx8w7mZIITS4",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b273294455fe32984eb5e230376eab67616d0000b273441b1ffeb2dd4bcf8b3b5d95ab67616d0000b2735b7891f679d6a4ec9c940a47ab67616d0000b273fd02b465795da82d0b6c5d42",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b273294455fe32984eb5e230376eab67616d0000b273441b1ffeb2dd4bcf8b3b5d95ab67616d0000b2735b7891f679d6a4ec9c940a47ab67616d0000b273fd02b465795da82d0b6c5d42",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b273294455fe32984eb5e230376eab67616d0000b273441b1ffeb2dd4bcf8b3b5d95ab67616d0000b2735b7891f679d6a4ec9c940a47ab67616d0000b273fd02b465795da82d0b6c5d42",
+          "width": 60
+        }
+      ],
+      "name": "The Lovegivers choice ballads",
+      "owner": {
+        "display_name": "Carl Ottosson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/carlottosson"
+        },
+        "href": "https://api.spotify.com/v1/users/carlottosson",
+        "id": "carlottosson",
+        "type": "user",
+        "uri": "spotify:user:carlottosson"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDIsNmFkNGU0NmE5MjYxY2Y1NDlkYjcwNGQwZWU1NDgwODg0OGVmYTBmOQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3jaViGCQQUcx8w7mZIITS4/tracks",
+        "total": 31
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3jaViGCQQUcx8w7mZIITS4"
+    },
+    {
+      "collaborative": false,
+      "description": "Songs produced by Carl Ottosson",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7iZo0xeWEk3Zjbiabh2Et1"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7iZo0xeWEk3Zjbiabh2Et1",
+      "id": "7iZo0xeWEk3Zjbiabh2Et1",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b273140be614f67775c56dd7d5f0ab67616d0000b27361824310d2058b68475b2553ab67616d0000b273dd33e7ea3315288e2a26de80ab67616d0000b273effb1d266a4c644a3bfe0ba8",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b273140be614f67775c56dd7d5f0ab67616d0000b27361824310d2058b68475b2553ab67616d0000b273dd33e7ea3315288e2a26de80ab67616d0000b273effb1d266a4c644a3bfe0ba8",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b273140be614f67775c56dd7d5f0ab67616d0000b27361824310d2058b68475b2553ab67616d0000b273dd33e7ea3315288e2a26de80ab67616d0000b273effb1d266a4c644a3bfe0ba8",
+          "width": 60
+        }
+      ],
+      "name": "Carlo Productions",
+      "owner": {
+        "display_name": "Carl Ottosson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/carlottosson"
+        },
+        "href": "https://api.spotify.com/v1/users/carlottosson",
+        "id": "carlottosson",
+        "type": "user",
+        "uri": "spotify:user:carlottosson"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzksM2EwMDhmZTg1YzFlZWQ1MjdiY2YxZTYzZDcwYzlmYTkwZWYzM2FkZA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7iZo0xeWEk3Zjbiabh2Et1/tracks",
+        "total": 15
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7iZo0xeWEk3Zjbiabh2Et1"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2RmXvgwtI4TqS0FvHv0MEX"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2RmXvgwtI4TqS0FvHv0MEX",
+      "id": "2RmXvgwtI4TqS0FvHv0MEX",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2734263d55f2650f750a4ac0e0aab67616d0000b27355692cb1bbed6a6800ad6f02ab67616d0000b2735d363541aabbce47e381509dab67616d0000b2737015a5dfc1b46e0dee45e09c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2734263d55f2650f750a4ac0e0aab67616d0000b27355692cb1bbed6a6800ad6f02ab67616d0000b2735d363541aabbce47e381509dab67616d0000b2737015a5dfc1b46e0dee45e09c",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2734263d55f2650f750a4ac0e0aab67616d0000b27355692cb1bbed6a6800ad6f02ab67616d0000b2735d363541aabbce47e381509dab67616d0000b2737015a5dfc1b46e0dee45e09c",
+          "width": 60
+        }
+      ],
+      "name": "Acoustic Session",
+      "owner": {
+        "display_name": "rankone",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/rankone"
+        },
+        "href": "https://api.spotify.com/v1/users/rankone",
+        "id": "rankone",
+        "type": "user",
+        "uri": "spotify:user:rankone"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTU0NyxmN2E1ZmIwYTRmOGQ1NGNmMDZmNTZkZjM5NjNiOGNhZDgxNjliNGYz",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2RmXvgwtI4TqS0FvHv0MEX/tracks",
+        "total": 1039
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2RmXvgwtI4TqS0FvHv0MEX"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1Dp8UkP0BqqdlyzY3aXKA5"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1Dp8UkP0BqqdlyzY3aXKA5",
+      "id": "1Dp8UkP0BqqdlyzY3aXKA5",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2731af386920bd356124b117b40ab67616d0000b273280b04817e7547fea8cfb7d0ab67616d0000b27359599c716d9ef2c518bf6794ab67616d0000b273e1c0fb5bc5b8fc991abdf5f9",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2731af386920bd356124b117b40ab67616d0000b273280b04817e7547fea8cfb7d0ab67616d0000b27359599c716d9ef2c518bf6794ab67616d0000b273e1c0fb5bc5b8fc991abdf5f9",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2731af386920bd356124b117b40ab67616d0000b273280b04817e7547fea8cfb7d0ab67616d0000b27359599c716d9ef2c518bf6794ab67616d0000b273e1c0fb5bc5b8fc991abdf5f9",
+          "width": 60
+        }
+      ],
+      "name": "Desmond Huddinge",
+      "owner": {
+        "display_name": "Carl Ottosson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/carlottosson"
+        },
+        "href": "https://api.spotify.com/v1/users/carlottosson",
+        "id": "carlottosson",
+        "type": "user",
+        "uri": "spotify:user:carlottosson"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NjcsMjMzNDI4MThlMmI2ZjA2NGRiMWMzZDUxMTM4M2Q3YTE0Nzc0NmZlNQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1Dp8UkP0BqqdlyzY3aXKA5/tracks",
+        "total": 26
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1Dp8UkP0BqqdlyzY3aXKA5"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/661H2uBBf7BHUgFa75R01G"
+      },
+      "href": "https://api.spotify.com/v1/playlists/661H2uBBf7BHUgFa75R01G",
+      "id": "661H2uBBf7BHUgFa75R01G",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2733b9f8b18cc685e1502128aa8ab67616d0000b27386e5468d84ed66f06d9a799eab67616d0000b2739173e50e99bdea2400222f02ab67616d0000b273a47127db3e929f64a2795666",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2733b9f8b18cc685e1502128aa8ab67616d0000b27386e5468d84ed66f06d9a799eab67616d0000b2739173e50e99bdea2400222f02ab67616d0000b273a47127db3e929f64a2795666",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2733b9f8b18cc685e1502128aa8ab67616d0000b27386e5468d84ed66f06d9a799eab67616d0000b2739173e50e99bdea2400222f02ab67616d0000b273a47127db3e929f64a2795666",
+          "width": 60
+        }
+      ],
+      "name": "KMH fest",
+      "owner": {
+        "display_name": "Carl Ottosson",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/carlottosson"
+        },
+        "href": "https://api.spotify.com/v1/users/carlottosson",
+        "id": "carlottosson",
+        "type": "user",
+        "uri": "spotify:user:carlottosson"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzAsNDhjY2Q3ZTljMTYyOTI3NGIyYzk1NTBhZTk2NzJkNWNjMjkyMmM2Nw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/661H2uBBf7BHUgFa75R01G/tracks",
+        "total": 25
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:661H2uBBf7BHUgFa75R01G"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2SA9rdSmlKEQ4hQDUTrAUE"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2SA9rdSmlKEQ4hQDUTrAUE",
+      "id": "2SA9rdSmlKEQ4hQDUTrAUE",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2738635b134b43faaad05a6d92bab67616d0000b2738cd7988d2f03164e52de3880ab67616d0000b2739ec1767fc57ff6d88f6cfda9ab67616d0000b273d96cbc607a16fdceadbf908a",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2738635b134b43faaad05a6d92bab67616d0000b2738cd7988d2f03164e52de3880ab67616d0000b2739ec1767fc57ff6d88f6cfda9ab67616d0000b273d96cbc607a16fdceadbf908a",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2738635b134b43faaad05a6d92bab67616d0000b2738cd7988d2f03164e52de3880ab67616d0000b2739ec1767fc57ff6d88f6cfda9ab67616d0000b273d96cbc607a16fdceadbf908a",
+          "width": 60
+        }
+      ],
+      "name": "Desmond & Leafy",
+      "owner": {
+        "display_name": "Anders Kappelin",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/hijakkah"
+        },
+        "href": "https://api.spotify.com/v1/users/hijakkah",
+        "id": "hijakkah",
+        "type": "user",
+        "uri": "spotify:user:hijakkah"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjcsOGE0MDZjZWE5OThhYWJmMjcwODBhMzg4YTc3YjRlOTI1ZWY5MDM4Yg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2SA9rdSmlKEQ4hQDUTrAUE/tracks",
+        "total": 15
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2SA9rdSmlKEQ4hQDUTrAUE"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4qrWCSGtdRA49s3sd1EGqb"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4qrWCSGtdRA49s3sd1EGqb",
+      "id": "4qrWCSGtdRA49s3sd1EGqb",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2732fee61bfec596bb6f5447c50ab67616d0000b2737862811f80ae629373954f0dab67616d0000b2739a0bfbb6626c902b971d1435ab67616d0000b273c7087466d74c3470d191cf37",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2732fee61bfec596bb6f5447c50ab67616d0000b2737862811f80ae629373954f0dab67616d0000b2739a0bfbb6626c902b971d1435ab67616d0000b273c7087466d74c3470d191cf37",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2732fee61bfec596bb6f5447c50ab67616d0000b2737862811f80ae629373954f0dab67616d0000b2739a0bfbb6626c902b971d1435ab67616d0000b273c7087466d74c3470d191cf37",
+          "width": 60
+        }
+      ],
+      "name": "Gig 12 maj 2012",
+      "owner": {
+        "display_name": "gtörnfeldt",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/gt%C3%B6rnfeldt"
+        },
+        "href": "https://api.spotify.com/v1/users/gt%C3%B6rnfeldt",
+        "id": "gtörnfeldt",
+        "type": "user",
+        "uri": "spotify:user:gt%C3%B6rnfeldt"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NTIsOWMxOWFhNDhlM2FkZjNhNmJjOGY5YTBjMjU1MmI3MDBmNGI1MjU1Nw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4qrWCSGtdRA49s3sd1EGqb/tracks",
+        "total": 31
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4qrWCSGtdRA49s3sd1EGqb"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5qBT6V8oCTupywn6Gwujl6"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5qBT6V8oCTupywn6Gwujl6",
+      "id": "5qBT6V8oCTupywn6Gwujl6",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2730c227b257a98f1a50ac504ddab67616d0000b273194059a08c20b4f39bbb31c7ab67616d0000b273a6b49ca72312383b72a8d9b4ab67616d0000b273f5819f138439b3ac881a2a6b",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2730c227b257a98f1a50ac504ddab67616d0000b273194059a08c20b4f39bbb31c7ab67616d0000b273a6b49ca72312383b72a8d9b4ab67616d0000b273f5819f138439b3ac881a2a6b",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2730c227b257a98f1a50ac504ddab67616d0000b273194059a08c20b4f39bbb31c7ab67616d0000b273a6b49ca72312383b72a8d9b4ab67616d0000b273f5819f138439b3ac881a2a6b",
+          "width": 60
+        }
+      ],
+      "name": "indiecalle",
+      "owner": {
+        "display_name": "John Hugardt",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/johnnygocart"
+        },
+        "href": "https://api.spotify.com/v1/users/johnnygocart",
+        "id": "johnnygocart",
+        "type": "user",
+        "uri": "spotify:user:johnnygocart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjIsZTg3YzUwNzNlNTQxMDY5MGRjMmUzZWQyODg0OWFlYjZiMDIxODNjMQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5qBT6V8oCTupywn6Gwujl6/tracks",
+        "total": 14
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5qBT6V8oCTupywn6Gwujl6"
+    }
+  ],
+  "limit": 50,
+  "next": null,
+  "offset": 0,
+  "previous": null,
+  "total": 8
+}
