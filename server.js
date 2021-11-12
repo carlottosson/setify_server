@@ -101,7 +101,7 @@ const fetchPlaylistTracks = (id) => new Promise((resolve, reject) => {
   fetch(`https://api.spotify.com/v1/playlists/${id}/tracks`, options)
   .then(res => res.json())
   .then(data => resolve(data))
-  .catch(err => console.log(err))
+  .catch(err => reject(err))
 })
 
 const fetchTracksAudioFeatures = (idArray) => new Promise((resolve, reject) => {
@@ -116,7 +116,7 @@ const fetchTracksAudioFeatures = (idArray) => new Promise((resolve, reject) => {
   fetch(`https://api.spotify.com/v1/audio-features?ids=${idList}`, options)
   .then(res => res.json())
   .then(data => resolve(data))
-  .catch(err => console.log(err))
+  .catch(err => reject(err))
 });
 
 app.post('/getsongs', async (req, res) => {
