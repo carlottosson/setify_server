@@ -1,7 +1,6 @@
 const express = require('express');
 require('dotenv').config();
 const cors = require('cors');
-const request = require('request');
 const axios = require('axios');
 
 const { encodeFormData } = require('./utils/encodeFormData');
