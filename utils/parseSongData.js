@@ -69,6 +69,7 @@ const parseSongData = (songData, audioData) => {
   const totalTimeNice = durationConvrter(totalTime);
   return songData.items.map((song, index) => {
     return {
+      id: song.track.id,
       songName: song.track.name,
       songLink: song.track.external_urls.spotify,
       image: song.track.album.images[2].url ? song.track.album.images[2].url : null,
@@ -79,7 +80,7 @@ const parseSongData = (songData, audioData) => {
       mode: audioData.audio_features[index].mode === 0 ? 'Minor' : 'Major',
       danceability: audioData.audio_features[index].danceability,
       energy: audioData.audio_features[index].energy,
-      tempo: Math.round(audioData.audio_features[index].tempo),
+      tempo: Math.round(audioData.audio_features[index].tempo) + ' bpm',
       happy: audioData.audio_features[index].valence,
       happy_emoji: emojiConverter(audioData.audio_features[index].valence),
       id: song.track.id,

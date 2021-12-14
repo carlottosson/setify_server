@@ -2,15 +2,15 @@ const express = require('express');
 require('dotenv').config();
 const cors = require('cors');
 const request = require('request');
-const fetch = require('node-fetch');
+const axios = require('axios');
 
 const { encodeFormData } = require('./utils/encodeFormData');
 const { parseSongData } = require('./utils/parseSongData');
 
-const dataPlaylists = require('./dataPlaylists.json');
-const dataUser = require('./dataUser.json');
-const dataSongs = require('./dataSongs.json');
-const dataAudioFeatures = require('./dataAudioFeatures.json');
+// const dataPlaylists = require('./mockData/dataPlaylists.json');
+// const dataUser = require('./mockData/dataUser.json');
+// const dataSongs = require('./mockData/dataSongs.json');
+// const dataAudioFeatures = require('./mockData/dataAudioFeatures.json');
 
 const app = express();
 
@@ -33,59 +33,72 @@ app.get('/login', (req, res) => {
       response_type: 'code',
       client_id: client_id,
       scope: scope,
-      redirect_uri: redirect_uri
+      redirect_uri: redirect_uri,
+      // show_dialog: true
     }));
 })
 
-app.get('/callback', (req, res) => {
+app.get('/callback', async (req, res) => {
   const code = req.query.code;
+
+  const url =  'https://accounts.spotify.com/api/token';
+  const params = {
+    grant_type: 'authorization_code',
+    code: code,
+    redirect_uri,
+  }
   const authOptions = {
-    url: 'https://accounts.spotify.com/api/token',
-    form: {
-      code: code,
-      redirect_uri,
-      grant_type: 'authorization_code'
-    },
     headers: {
       'Authorization': 'Basic ' + (new Buffer.from(process.env.CLIENT_ID + ':' + process.env.CLIENT_SECRET).toString('base64')),
       'Content-Type': 'application/x-www-form-urlencoded'
     },
     json: true
   }
-  request.post(authOptions, (error, response, body) => {
-    access_token = body.access_token;
+
+  try {
+    const response = await axios.post(url, encodeFormData(params), authOptions);
+    access_token = response.data.access_token;
     const uri = process.env.FRONTEND_URI || 'http://localhost:3000';
     res.redirect(uri);
-  });
+  } catch (err) {
+    console.log(err);
+  }
+  
 })
 
 
-app.get('/getuser', (req, res) => {
+app.get('/getuser', async (req, res) => {
   const options = {
     headers: {
-      Authorization: `Bearer ${access_token}`,
-      'Content-Type': 'application/json'
+      'Authorization': `Bearer ${access_token}`,
+      'Content-Type': 'application/json',
     }
   }
-  request.get('https://api.spotify.com/v1/me', options, (err, response, body) => {
-    const data = JSON.parse(body);
+  // const response = axios.get('https://api.spotify.com/v1/me', options, (err, response, body) => {
+  //   const data = JSON.parse(body);
+  //   userID = data.id;
+  //   res.json(data);
+  // });
+  try {
+    const response = await axios.get('https://api.spotify.com/v1/me', options);
+    const data = response.data;
     userID = data.id;
     res.json(data);
-  });
+  } catch (err) {
+    console.log(err.message);
+  }
   // res.json(dataUser);
 });
 
-app.get('/getuserplaylist', (req, res) => {
+app.get('/getuserplaylist', async (req, res) => {
   const options = {
     headers: {
       Authorization: `Bearer ${access_token}`,
       'Content-Type': 'application/json'
     }
   }
-  request.get(`https://api.spotify.com/v1/users/${userID}/playlists?limit=50&offset=0`, options, (err, response, body) => {
-    const data = JSON.parse(body);
-    res.json(data);
-  })
+  const response = await axios.get(`https://api.spotify.com/v1/users/${userID}/playlists?limit=50&offset=0`, options);
+  res.json(response.data);
   // res.json(dataPlaylists);
 })
 
@@ -98,10 +111,9 @@ const fetchPlaylistTracks = (id) => new Promise((resolve, reject) => {
       Host: 'api.spotify.com'
     }
   }
-  fetch(`https://api.spotify.com/v1/playlists/${id}/tracks`, options)
-  .then(res => res.json())
-  .then(data => resolve(data))
-  .catch(err => reject(err))
+  axios.get(`https://api.spotify.com/v1/playlists/${id}/tracks`, options)
+    .then(res => resolve(res.data))
+    .catch(err => reject(err))
 })
 
 const fetchTracksAudioFeatures = (idArray) => new Promise((resolve, reject) => {
@@ -113,10 +125,9 @@ const fetchTracksAudioFeatures = (idArray) => new Promise((resolve, reject) => {
       Host: 'api.spotify.com'
     }
   }
-  fetch(`https://api.spotify.com/v1/audio-features?ids=${idList}`, options)
-  .then(res => res.json())
-  .then(data => resolve(data))
-  .catch(err => reject(err))
+  axios.get(`https://api.spotify.com/v1/audio-features?ids=${idList}`, options)
+    .then(res => resolve(res.data))
+    .catch(err => reject(err))
 });
 
 app.post('/getsongs', async (req, res) => {
@@ -130,8 +141,5 @@ app.post('/getsongs', async (req, res) => {
   } catch (error) {
     console.log(error);
   }
-
   // const data = parseSongData(dataSongs, dataAudioFeatures);
-
-  
 });
