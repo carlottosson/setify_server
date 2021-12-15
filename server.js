@@ -73,11 +73,6 @@ app.get('/getuser', async (req, res) => {
       'Content-Type': 'application/json',
     }
   }
-  // const response = axios.get('https://api.spotify.com/v1/me', options, (err, response, body) => {
-  //   const data = JSON.parse(body);
-  //   userID = data.id;
-  //   res.json(data);
-  // });
   try {
     const response = await axios.get('https://api.spotify.com/v1/me', options);
     const data = response.data;
@@ -86,7 +81,7 @@ app.get('/getuser', async (req, res) => {
   } catch (err) {
     console.log(err.message);
   }
-  // res.json(dataUser);
+  // res.json(dataUser); // mock data
 });
 
 app.get('/getuserplaylist', async (req, res) => {
@@ -98,7 +93,7 @@ app.get('/getuserplaylist', async (req, res) => {
   }
   const response = await axios.get(`https://api.spotify.com/v1/users/${userID}/playlists?limit=50&offset=0`, options);
   res.json(response.data);
-  // res.json(dataPlaylists);
+  // res.json(dataPlaylists); // mock data
 })
 
 
@@ -137,8 +132,8 @@ app.post('/getsongs', async (req, res) => {
     const tracksAudioFeatures = await fetchTracksAudioFeatures(tracksIdArray);
     const data = parseSongData(playlistTracks, tracksAudioFeatures);
     res.json(data);
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
   }
-  // const data = parseSongData(dataSongs, dataAudioFeatures);
+  // const data = parseSongData(dataSongs, dataAudioFeatures); // mock data
 });
